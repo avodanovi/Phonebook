@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sara.javefx.ImenikController">
+   <top>
+      <MenuBar prefHeight="37.0" prefWidth="686.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="Hotel" mnemonicParsing="false" text="HOTELS">
+               <items>
+                  <MenuItem fx:id="prikaziHotel" mnemonicParsing="false" onAction="#UcitajHotele" text="View" />
+                  <MenuItem mnemonicParsing="false" onAction="#noviHotel" text="Add new" />
+               </items>
+          </Menu>
+          <Menu fx:id="Tvrtke" mnemonicParsing="false" text="ARCHITECTS-INTERIOUR DESIGNERS">
+               <items>
+                  <MenuItem fx:id="prikaziTvrtke" mnemonicParsing="false" onAction="#UcitajArhitekte" text="View" />
+                  <MenuItem mnemonicParsing="false" onAction="#novaArhTvrtke" text="Add new" />
+               </items></Menu>
+          <Menu fx:id="IzlozbeniP" mnemonicParsing="false" text="SHOWROOMS">
+               <items>
+                  <MenuItem fx:id="prikaziIzlozbeniP" mnemonicParsing="false" onAction="#UcitajIzlozbeneProstore" text="View" />
+                  <MenuItem mnemonicParsing="false" onAction="#noviIzlozbeniProstor" text="Add new" />
+               </items></Menu>
+            <Menu fx:id="Distributori" mnemonicParsing="false" text="DISTRIBUTORS">
+               <items>
+                  <MenuItem fx:id="prikaziDistributore" mnemonicParsing="false" onAction="#UcitajDistributere" text="View" />
+                  <MenuItem mnemonicParsing="false" onAction="#noviDistributer" text="Add new" />
+               </items></Menu>
+            <Menu fx:id="Izvodjaci" mnemonicParsing="false" text="CONTRACTORS">
+               <items>
+                  <MenuItem fx:id="prikaziIzvodjace" mnemonicParsing="false" onAction="#UcitajIzvodjace" text="View" />
+                  <MenuItem mnemonicParsing="false" onAction="#noviIzvodjac" text="Add new" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <Pane prefHeight="454.0" prefWidth="17.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <Pane prefHeight="323.0" prefWidth="449.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="Prikaz" layoutX="-1.0" layoutY="59.0" prefHeight="406.0" prefWidth="743.0">
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem fx:id="sendEmail" mnemonicParsing="false" onAction="#posaljiEmail" text="Send e-mail" />
+                        <MenuItem mnemonicParsing="false" onAction="#posaljiMailSvima" text="Send e-mail to all" />
+                        <MenuItem fx:id="izmjeni" mnemonicParsing="false" onAction="#napraviIzmjenu" text="Edit" />
+                        <MenuItem mnemonicParsing="false" onAction="#obrisi" text="Delete" />
+                        <MenuItem mnemonicParsing="false" onAction="#Refrash" text="Refresh" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu></ListView>
+            <TextField fx:id="pretraga" layoutX="258.0" layoutY="14.0" onAction="#Pretrazi" prefHeight="25.0" prefWidth="215.0" promptText="Search" />
+            <Button layoutX="473.0" layoutY="14.0" mnemonicParsing="false" onAction="#Pretrazi" text="Search" />
+            <ChoiceBox fx:id="cb" layoutX="159.0" layoutY="14.0" prefHeight="25.0" prefWidth="99.0" />
+         </children>
+      </Pane>
+   </center>
+   <right>
+      <Pane prefHeight="454.0" prefWidth="17.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <Pane prefHeight="22.0" prefWidth="775.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="offline" layoutX="665.0" layoutY="-12.0" mnemonicParsing="false" onAction="#RadiOffline" prefHeight="25.0" prefWidth="92.0" text="Offline" />
+         </children></Pane>
+   </bottom>
+</BorderPane>

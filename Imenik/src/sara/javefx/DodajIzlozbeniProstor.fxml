@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sara.javefx.DodajIzlozbeniProstorController">
+   <items>
+      <Pane prefHeight="259.0" prefWidth="207.0">
+         <children>
+            <Label layoutX="70.0" layoutY="14.0" prefHeight="22.0" prefWidth="137.0" text="Company name">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="45.0" prefHeight="25.0" prefWidth="137.0" text="Contac person">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="77.0" prefHeight="25.0" prefWidth="137.0" text="Address">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="109.0" prefHeight="25.0" prefWidth="137.0" text="City">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="141.0" prefHeight="25.0" prefWidth="137.0" text="Country">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="175.0" prefHeight="25.0" prefWidth="137.0" text="e-mail">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="209.0" prefHeight="25.0" prefWidth="137.0" text="Phone">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="242.0" prefHeight="25.0" prefWidth="137.0" text="Fax">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="276.0" prefHeight="25.0" prefWidth="137.0" text="Web">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="310.0" prefHeight="25.0" prefWidth="137.0" text="Mobile phone">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="344.0" prefHeight="25.0" prefWidth="137.0" text="Brand">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="300.0" prefWidth="213.0">
+         <children>
+            <TextField fx:id="ime" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="165.0" promptText="-" />
+            <TextField fx:id="kontaktOsoba" alignment="CENTER" layoutX="14.0" layoutY="45.0" prefHeight="25.0" prefWidth="165.0" promptText="-" />
+            <TextField fx:id="adresa" alignment="CENTER" layoutX="14.0" layoutY="76.0" prefHeight="25.0" prefWidth="165.0" promptText="-" />
+            <TextField fx:id="grad" alignment="CENTER" layoutX="14.0" layoutY="108.0" prefHeight="25.0" prefWidth="165.0" promptText="-" />
+            <TextField fx:id="drzava" alignment="CENTER" layoutX="14.0" layoutY="140.0" prefHeight="25.0" prefWidth="165.0" promptText="-" />
+            <TextField fx:id="mail" alignment="CENTER" layoutX="14.0" layoutY="175.0" prefHeight="25.0" prefWidth="165.0" promptText="-" />
+            <TextField fx:id="tel" alignment="CENTER" layoutX="14.0" layoutY="208.0" prefHeight="25.0" prefWidth="165.0" promptText="-" />
+            <TextField fx:id="fax" alignment="CENTER" layoutX="14.0" layoutY="240.0" prefHeight="25.0" prefWidth="165.0" promptText="-" />
+            <TextField fx:id="web" alignment="CENTER" layoutX="14.0" layoutY="274.0" prefHeight="25.0" prefWidth="165.0" promptText="-" />
+            <TextField fx:id="mob" alignment="CENTER" layoutX="14.0" layoutY="309.0" prefHeight="25.0" prefWidth="165.0" promptText="-" />
+            <Button fx:id="save" layoutX="49.0" layoutY="395.0" mnemonicParsing="false" onAction="#spremi" prefHeight="25.0" prefWidth="96.0" text="Save" />
+            <TextField fx:id="brand" alignment="CENTER" layoutX="14.0" layoutY="344.0" prefHeight="25.0" prefWidth="165.0" promptText="-" />
+         </children>
+      </Pane>
+   </items>
+</SplitPane>
